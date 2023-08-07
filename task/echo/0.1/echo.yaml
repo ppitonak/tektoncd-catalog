@@ -14,7 +14,7 @@ spec:
   description: >-
     This task echoes param's value to the standard output.
   params:
-    - name: appName
+    - name: input
       default: ''
   steps:
     - image: quay.io/fedora/fedora:38
@@ -22,4 +22,4 @@ spec:
         - /bin/bash
         - '-c'
         - echo
-        - $(inputs.params.appName)
+        - $(inputs.params.input)
