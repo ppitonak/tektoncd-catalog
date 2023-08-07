@@ -11,6 +11,8 @@ metadata:
     tekton.dev/displayName: "echo"
     tekton.dev/platforms: "linux/amd64,linux/s390x,linux/ppc64le,linux/arm64"
 spec:
+  description: >-
+    This task echoes param's value to the standard output.
   params:
     - name: appName
       default: ''
